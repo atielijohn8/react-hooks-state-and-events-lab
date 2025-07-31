@@ -4,9 +4,11 @@ import itemData from "../data/items";
 
 function App() {
 
+  // Dark Mode State
   const [isDarkMode, setIsDarkMode] = useState(false);
   const appClass = isDarkMode ? "App dark" : "App light";
 
+  // Toggle handler
   function darkModeHandler() {
     setIsDarkMode((prevMode) => !prevMode);
   }
@@ -24,3 +26,5 @@ function App() {
     </div>
   );
 }
+
+export default App;
